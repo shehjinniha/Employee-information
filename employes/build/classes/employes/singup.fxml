@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="499.0" prefWidth="776.0" style="-fx-background-color: #bfcbff;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employes.SingupController">
+   <ImageView fitHeight="401.0" fitWidth="339.0" layoutX="94.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@image/8598268.jpg" />
+      </image>
+   </ImageView>
+    <TextField fx:id="usernameField" layoutX="421.0" layoutY="154.0" prefHeight="25.0" prefWidth="261.0" style="-fx-background-color: transparent; -fx-border-color: #7d86ff; -fx-border-width: 2;" />
+    <PasswordField fx:id="passwordField" layoutX="421.0" layoutY="207.0" prefHeight="25.0" prefWidth="261.0" style="-fx-background-color: transparent; -fx-border-color: #7d86ff; -fx-border-width: 2;" />
+    
+          <Button layoutX="518.0" layoutY="314.0" onAction="#handleSignup" style="-fx-background-color: #6b54ec;" text="Signup" textFill="#fff7f7">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <PasswordField alignment="BOTTOM_LEFT" layoutX="421.0" layoutY="264.0" prefHeight="25.0" prefWidth="261.0" style="-fx-background-color: tranparent; -fx-border-color: #7d86ff; -fx-border-width: 2;" />
+   <Label alignment="CENTER" layoutX="425.0" layoutY="190.0" prefHeight="17.0" prefWidth="68.0" style="-fx-background-color: #dce3ff;" text="Password">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="428.0" layoutY="247.0" prefHeight="17.0" prefWidth="117.0" style="-fx-background-color: #dce3ff;" text="Confrim Password">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font>
+   </Label>
+   <Label layoutX="421.0" layoutY="65.0" text="Signup" textFill="#6b54ec">
+      <font>
+         <Font name="Arial Black" size="27.0" />
+      </font>
+   </Label>
+    
+          <Label alignment="CENTER" layoutX="425.0" layoutY="137.0" prefHeight="17.0" prefWidth="68.0" style="-fx-background-color: #dce3ff;" text="Username">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font>
+   </Label>
+   <Label layoutX="442.0" layoutY="361.0" prefHeight="17.0" prefWidth="152.0" style="-fx-background-color: #bfcbff;" text="Already have an account?">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font>
+   </Label>
+    <Button layoutX="574.0" layoutY="355.0" onAction="#handleGoToLogin" prefHeight="29.0" prefWidth="68.0" style="-fx-background-color: transparent;" text=" Login !" textFill="#5356ff">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font>
+   </Button>
+</AnchorPane>
